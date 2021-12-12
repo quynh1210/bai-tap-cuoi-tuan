@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="a" placeholder="nhập vào a"/><br>
+<input type="text" id="b"placeholder="nhập vào b"/><br>
+<button type="button" onclick="result()">kết quả</button>
+<p id="result"></p>
+<script>
+    function result() {
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        let c = document.getElementById("c").value;
+        let S = a*(c + 1) +c*(c + 1)/2;
+        document.getElementById("result").innerHTML= 'Tổng các số từ a đến b =' +S;
+    }
+</script>
+</body>
+</html>

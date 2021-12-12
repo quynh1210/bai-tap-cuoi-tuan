@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="a"placeholder="nhập năm"><br>
+<button onclick="result()">kết quả</button><br>
+<p id="result"></p>
+<script>
+    function result() {
+        let year = document.getElementById("a").value;
+        let century = parseInt(year / 100) + 1;
+        document.getElementById("result").innerHTML = 'Năm' + year + "thuộc thế kỷ" + century;
+    }
+</script>
+</body>
+</html>
